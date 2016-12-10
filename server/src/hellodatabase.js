@@ -7,8 +7,8 @@ MongoClient.connect(url, function(err, db) {
         throw new Error("Could not connect to database: " + err);
     } else {
         console.log("Connected correctly to server.");
-        mongoExample(db);
         // This is where we will kick off other actions that use the database!
+        mongoExample(db);
     }
 });
 
